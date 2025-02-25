@@ -5,7 +5,7 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 import { eStatus, Shipment } from "@/types/shipment";
-import React from "react";
+
 import { ShipmentCard } from "@/components/dashboard/ShipmentCard";
 
 const mockShipment: Shipment = {

@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Package, Truck, CheckCircle, AlertCircle } from "lucide-react";
 import { eStatus, Shipment } from "@/types/shipment";
 import { StatCard } from "./StatCard";

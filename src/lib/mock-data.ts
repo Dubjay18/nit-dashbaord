@@ -1,10 +1,10 @@
-import { Shipment } from "@/types/shipment";
+import { eStatus, Shipment } from "@/types/shipment";
 
 export const mockShipments: Shipment[] = [
   {
     id: "1",
     trackingNumber: "SHP001",
-    status: "in_transit",
+    status: eStatus.IN_TRANSIT,
     origin: "New York",
     destination: "Los Angeles",
     estimatedDelivery: "2025-02-15",
@@ -15,7 +15,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "2",
     trackingNumber: "SHP002",
-    status: "pending",
+    status: eStatus.PENDING,
     origin: "Chicago",
     destination: "Miami",
     estimatedDelivery: "2025-02-16",
@@ -26,7 +26,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "3",
     trackingNumber: "SHP003",
-    status: "delivered",
+    status: eStatus.DELIVERED,
     origin: "Seattle",
     destination: "Boston",
     estimatedDelivery: "2025-02-14",
@@ -37,7 +37,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "4",
     trackingNumber: "SHP004",
-    status: "delayed",
+    status: eStatus.DELAYED,
     origin: "San Francisco",
     destination: "Denver",
     estimatedDelivery: "2025-02-17",
@@ -48,7 +48,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "5",
     trackingNumber: "SHP005",
-    status: "in_transit",
+    status: eStatus.IN_TRANSIT,
     origin: "Houston",
     destination: "Phoenix",
     estimatedDelivery: "2025-02-15",
@@ -59,7 +59,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "6",
     trackingNumber: "SHP006",
-    status: "pending",
+    status: eStatus.PENDING,
     origin: "Atlanta",
     destination: "Dallas",
     estimatedDelivery: "2025-02-18",
@@ -70,7 +70,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "7",
     trackingNumber: "SHP007",
-    status: "delivered",
+    status: eStatus.DELIVERED,
     origin: "Portland",
     destination: "Las Vegas",
     estimatedDelivery: "2025-02-13",
@@ -81,7 +81,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "8",
     trackingNumber: "SHP008",
-    status: "in_transit",
+    status: eStatus.IN_TRANSIT,
     origin: "Austin",
     destination: "San Diego",
     estimatedDelivery: "2025-02-16",
@@ -92,7 +92,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "9",
     trackingNumber: "SHP009",
-    status: "delayed",
+    status: eStatus.DELAYED,
     origin: "Nashville",
     destination: "Orlando",
     estimatedDelivery: "2025-02-19",
@@ -103,7 +103,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "10",
     trackingNumber: "SHP010",
-    status: "pending",
+    status: eStatus.PENDING,
     origin: "Detroit",
     destination: "Philadelphia",
     estimatedDelivery: "2025-02-17",
@@ -114,7 +114,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "11",
     trackingNumber: "SHP011",
-    status: "in_transit",
+    status: eStatus.IN_TRANSIT,
     origin: "Minneapolis",
     destination: "Tampa",
     estimatedDelivery: "2025-02-15",
@@ -125,7 +125,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "12",
     trackingNumber: "SHP012",
-    status: "delivered",
+    status: eStatus.DELIVERED,
     origin: "Raleigh",
     destination: "Salt Lake City",
     estimatedDelivery: "2025-02-14",
@@ -136,7 +136,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "13",
     trackingNumber: "SHP013",
-    status: "delayed",
+    status: eStatus.DELAYED,
     origin: "Indianapolis",
     destination: "Kansas City",
     estimatedDelivery: "2025-02-18",
@@ -147,7 +147,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "14",
     trackingNumber: "SHP014",
-    status: "pending",
+    status: eStatus.PENDING,
     origin: "Baltimore",
     destination: "Memphis",
     estimatedDelivery: "2025-02-19",
@@ -158,7 +158,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "15",
     trackingNumber: "SHP015",
-    status: "in_transit",
+    status: eStatus.IN_TRANSIT,
     origin: "Louisville",
     destination: "Oklahoma City",
     estimatedDelivery: "2025-02-16",
@@ -169,7 +169,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "16",
     trackingNumber: "SHP016",
-    status: "delivered",
+    status: eStatus.DELIVERED,
     origin: "Milwaukee",
     destination: "Albuquerque",
     estimatedDelivery: "2025-02-13",
@@ -180,7 +180,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "17",
     trackingNumber: "SHP017",
-    status: "delayed",
+    status: eStatus.DELAYED,
     origin: "Tucson",
     destination: "Fresno",
     estimatedDelivery: "2025-02-20",
@@ -191,7 +191,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "18",
     trackingNumber: "SHP018",
-    status: "pending",
+    status: eStatus.PENDING,
     origin: "Sacramento",
     destination: "Mesa",
     estimatedDelivery: "2025-02-18",
@@ -202,7 +202,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "19",
     trackingNumber: "SHP019",
-    status: "in_transit",
+    status: eStatus.IN_TRANSIT,
     origin: "Omaha",
     destination: "Colorado Springs",
     estimatedDelivery: "2025-02-15",
@@ -213,7 +213,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "20",
     trackingNumber: "SHP020",
-    status: "delivered",
+    status: eStatus.DELIVERED,
     origin: "Long Beach",
     destination: "Raleigh",
     estimatedDelivery: "2025-02-14",
@@ -224,7 +224,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "21",
     trackingNumber: "SHP021",
-    status: "delayed",
+    status: eStatus.DELAYED,
     origin: "Oakland",
     destination: "Virginia Beach",
     estimatedDelivery: "2025-02-19",
@@ -235,7 +235,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "22",
     trackingNumber: "SHP022",
-    status: "pending",
+    status: eStatus.PENDING,
     origin: "Tulsa",
     destination: "Honolulu",
     estimatedDelivery: "2025-02-20",
@@ -246,7 +246,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "23",
     trackingNumber: "SHP023",
-    status: "in_transit",
+    status: eStatus.IN_TRANSIT,
     origin: "Arlington",
     destination: "Anaheim",
     estimatedDelivery: "2025-02-16",
@@ -257,7 +257,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "24",
     trackingNumber: "SHP024",
-    status: "delivered",
+    status: eStatus.DELIVERED,
     origin: "Wichita",
     destination: "Santa Ana",
     estimatedDelivery: "2025-02-13",
@@ -268,7 +268,7 @@ export const mockShipments: Shipment[] = [
   {
     id: "25",
     trackingNumber: "SHP025",
-    status: "delayed",
+    status: eStatus.DELAYED,
     origin: "Bakersfield",
     destination: "Riverside",
     estimatedDelivery: "2025-02-20",
